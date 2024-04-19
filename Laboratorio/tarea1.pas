@@ -4,60 +4,66 @@ const
     SEPARADOR   = ' ';   { caracter que separa palabras }
     FINALIZADOR = '.';   { caracter que determina fin de oración }
 
-procedure leerPalabraLargo (letra : Char; var largo : integer; var fin : boolean);
+procedure leerPalabraLargo (var largo : integer; var fin : boolean);
+
+var 
+    letra : Char; { caracter que se está leyendo }
+    espacio : Boolean; { guarda el momento en el que se encuentra el "SEPARADOR" }
+
 begin
-    if (letra = SEPARADOR) or (letra = FINALIZADOR) then
+
+    fin := false;
+    espacio := false;
+    largo := 0;
+
+    while not espacio do
     begin
-        writeLn(letra);
-        fin := true
-    end
-    else
-        largo := largo + 1
+        read(letra);
+        if (letra = FINALIZADOR) then
+        begin
+            fin := true; 
+            espacio := true;
+        end
+        else if (letra = SEPARADOR) then
+            espacio := true 
+        else
+        begin
+            largo := largo + 1; { aumenta el conteo del largo de la palabra }
+        end;
+    end;
+end;
+
+procedure ActualizarMayorOMenor(largo: integer; var masLarga, masCorta : integer);
+begin
+    if largo < masCorta then
+        masCorta := largo;     
+    if largo > masLarga then
+        masLarga := largo;     
 end;
 
 procedure leerOracionDatos (var cantPalabras,masLarga, masCorta : integer);
 
-var letra : Char;  { caracter actual leeido }
-    largo : integer; { largo de la palabra}
+var 
+    largo : integer; 
     fin : boolean;
-    
 
 begin
+
     largo := 0;
     cantPalabras := 0;
     masLarga := 0;
-    masCorta := 0;
+    masCorta := Maxint;
     fin := false;
-    repeat
-        write('a');
-        if fin = false then
-        begin
-            read(letra);
-            leerPalabraLargo(letra,largo,fin);  
-            {writeLn(letra,'/',largo,'/',fin);}
-             write('b');
-        end
-        else
-        begin
-            cantPalabras := cantPalabras + 1;
-             write('c');
-            if (masCorta = 0) or (largo < masCorta) then
-            begin
-                masCorta := largo;
-                 write('d');
-            end;
-            if largo > masLarga then
-            begin 
-                masLarga := largo;
-                 write('e');
-            end;
-            {writeLn('MasLargo:',masLarga,' | MasCorto:',masCorta,' | Largo:',largo);}
-            fin := false;
-            largo := 0;
-             writeLn('f');
-        end;
-    until (letra = FINALIZADOR);
+
+    while not fin do
+    begin 
+        leerPalabraLargo(largo,fin); 
+        ActualizarMayorOMenor(largo,masLarga,masCorta); { Detecta si el largo es el mayor o el menor y actualiza esos valores }
+        cantPalabras := cantPalabras + 1;
+    end;
 end;
+
+
 
 var cantPal, masLarga, masCorta : integer;
 
