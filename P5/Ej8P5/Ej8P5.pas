@@ -2,28 +2,50 @@ Program Ej8P5;
 
 const Centinela = '=';
 
-var signo : Char;
+var signo,character : Char;
     num, resultado : Integer;
 
 begin
-    signo := '+';
+    signo := '_';
     num := 0; 
     resultado := 0;  
+    character := ' ';
+    read(character);
     repeat
-       
-        {case signo of
-            '+': resultado:= resultado + num;
-            '-': resultado:= resultado - num;
+         
+
+       { write(character);}
+        case character of
+            '+': 
+            begin
+                {write(resultado,'+',num, '=');}
+                resultado:= resultado + num;
+                {writeLn(resultado);}
+            end;
+            '-':
+            begin 
+                resultado:= resultado - num;
+               { writeLn(resultado,'-');}
+            end;
+
             '*': resultado:= resultado * num;
             '/': resultado:= resultado Div num;
-        end;}
-        read(num);
-        write(num);
-
-        write(signo);
-        read(signo);
-        write(signo);
+            
+            else
+                begin
+                    {writeLn(character,'|',ord(character) - ord('0'));}
+                    if ((ord(character) - ord('0')) <= (ord('9') - ord('0'))) AND ((ord(character) - ord('0')) >= (ord('0') - ord('0'))) then
+                    begin
+                       
+                        num := ord(character) - ord('0');
+                        {writeLn(num);}
+                    end;
+                end;
+        end;
+        read(character);
       
-    until (signo = Centinela);
+        {write(signo);}
+      
+    until (character = Centinela);
     writeLn(resultado);
 end.
