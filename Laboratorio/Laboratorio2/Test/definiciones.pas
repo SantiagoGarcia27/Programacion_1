@@ -91,8 +91,9 @@ begin
    begin
       while (txt <> NIL) and (nln <> 1) do
       begin
-	 txt := txt^.sig; nln := nln - 1
+	      txt := txt^.sig; nln := nln - 1
       end;
+      
       ubicarLineaEnTexto := txt
    end
 end;

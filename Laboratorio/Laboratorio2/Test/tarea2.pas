@@ -69,37 +69,70 @@ begin
      l := 1;
     { for i := 1 to ln.tope do
          writeLn(ln.cars[i].car,'|', c.cars[l]);}
+
+   { for i := 1 to ln.tope do
+    begin
+        write(ln.cars[i].car);
+        if(ln.cars[i].car = '.') then 
+            writeLn(' ');
+    end;}
     i:= desde;
   
     //writeLn('test1');
 
    // writeln('ln.tope: ',ln.tope,'| c.tope: ',c.tope);
-
-
-
+    
+  
     while (i <= ln.tope) And (l < c.tope) do
     begin
+  
+         // write(i,'|');
         //writeLn(ln.cars[i].car,'|', c.cars[l]);
-        if ln.cars[i].car = c.cars[l] then
+       // write('[',ln.cars[i].car,'|', c.cars[l],']');
+       
+       // writeln(i,'|', ln.tope);
+
+       // write(ln.cars[i].car);
+       
+       
+       // writeln('[',ln.cars[i].car,'|', c.cars[l],']');
+      {  if(ln.cars[i].car = '.') then writeLn(' ');
+        if ln.cars[i].car = c.cars[l] then}
         begin
-          l := l + 1;
+           // writeLn('a');
+            l := l + 1;
 
             if l = 2 then
+            begin
                 pocicionInicial := i;
+                writeln('Entro | index: ',i,'| tope: ', ln.tope,'| l: ',l);
+            end;
+            if l > 2 then
+            begin
+                writeln('Next | index: ',i,'| tope: ', ln.tope,'| l: ',l);
+            end;
             //write(l,'|');
           //write('si|');
         end
         else
         begin
-          l := 1;
-          pocicionInicial := 1;
-         // write('no|');
+            //writeln('c');
+            if(l > 1) then 
+            begin
+                writeLn('rotura: ',l);
+                l := 1;     
+            end;
+            pocicionInicial := 1;
+            // write('no|');
         end;
-        i:= i + 1;
+        i := i + 1;
     end;
     //write('|',l,'|', c.tope,'|');  
     j := pocicionInicial;
+    //writeLn('fin: ',l = c.tope,'| l = ',l,'| c.tope: ',c.tope,'| index: ',j,'| tope: ',ln.tope);
+    
     LineaContieneCadena := l = c.tope;
+    //writeln('-----------------------------------------');
 end;
 
 
@@ -112,10 +145,25 @@ Var j : integer;
 
 begin
   //printLn('test0_');
+    
+       { writeLn('c.tope: ',c.tope,'| ln.tope: ',ln.tope,'| desde: ',desde);
+        write('cadena: ');
+        for j := 1 to c.tope do
+        begin
+            write(c.cars[j]);
+        end;
+        writeLn('');
+        write('linea: ');
+        for j := 1 to ln.tope do
+        begin
+            write(ln.Cars[j].car);
+        end;
+        writeLn('');}
     j := 1;
-    if (LineaContieneCadena(c,ln,desde,j)) AND (j > 1) then
+    //writeLn('resultado: ',LineaContieneCadena(c,ln,desde,j) And (j >= 1),'| j: ', j, '| LineaContieneCadena: ', LineaContieneCadena(c,ln,desde,j));
+    if (LineaContieneCadena(c,ln,desde,j)) AND (j >= 1) then
     begin  
-       // writeLn('test1_');
+        writeLn('test1_');
        // writeLn(j - c.tope); 
         pc.esColumna := true;
         pc.col := j; //- c.tope;
@@ -136,62 +184,105 @@ procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion; 
 
   Precondiciones: 1 <= desde.linea <= cantidad de líneas 
                   1 <= desde.columna <= tope de línea en desde.linea } 
-var 
+{var 
     pc : PosibleColumna;
-    lineaActual,i : integer;
+    lineaActual :integer;
+    //i : integer;
+    //j : integer;
+   // n : integer;
+    //l : integer;
     posicionActual : Posicion;
-    encontrado : boolean;
+
+
+
+    //lineaActual : Linea;
+    //encontrado : boolean;
 begin
 
     posicionActual.linea := 1;
     posicionActual.Columna := 1;
-    encontrado := false;
+    //encontrado := false;
     lineaActual := 1;
-    buscarCadenaEnLineaDesde (c, txt^.info, desde.columna,pc);
-    
-    while ((txt <> NIL) And (encontrado = false)) DO
+    pc.esColumna := false;
+        
+
+
+    while ((txt <> NIL) And (pc.esColumna = false) And (lineaActual < txt^.info.tope)) DO
     begin
-        for i:= 1 to c.tope do
-        begin
-            write(c.Cars[i]);
-        end;
-        writeLn('');
+        writeLn('No es null: ', txt <> NIL, '| Es columna: ',pc.esColumna,'| supera tope: ',lineaActual < txt^.info.tope);
+        writeLn('Cadena tope: ',c.tope,'| Linea:', lineaActual,' | Linea tope: ',txt^.info.tope,'| Columna: ',desde.columna,'| Es columna: ',pc.esColumna,'| Contenido: ');        
         for i:= 1 to txt^.info.tope do
         begin
             write(txt^.info.Cars[i].car);
         end;
+        writeLn('');//este no va
 
-        buscarCadenaEnLineaDesde (c, txt^.info, desde.columna,pc);
-        //write('|',pc.esColumna ,'|');
-        //writeLn(pc.esColumna,'|',pc.col);
-       { for i:= 1 to txt^.info.tope do
+
+        writeLn('LineaActual: ',lineaActual,'| Columna: ',desde.columna,'| Es columna: ',pc.esColumna);
+        if(lineaActual > desde.linea) then
         begin
-            write(txt^.info.Cars[i].car);
-        end;
-        writeLn('');}
-       // writeLn('-------------------------------------');
-      
-        if pc.esColumna = true then
-        begin 
-          {  for i:= 1 to txt^.info.tope do
+           // writeLN('lineaActual: ',lineaActual,'| desde.linea: ',desde.linea,'| Tope:',txt^.info.tope);
+           // writeLn('Si | lineaActual: ',lineaActual,'| desde.linea: ',desde.linea);
+            buscarCadenaEnLineaDesde (c, txt^.info, 1,pc); 
+            if pc.esColumna = true then
+            begin    
+              //  write('Si');
+                posicionActual.linea := lineaActual;
+                posicionActual.Columna := pc.col;
+                pp.esPosicion := true;
+                //encontrado := true;
+                pp.p := posicionActual;
+                writeLn(pp.p.linea);
+            end
+            else
             begin
-                write(txt^.info.Cars[i].car);
-            end;}
-            //write('Si');
-            posicionActual.linea := lineaActual;
-            posicionActual.Columna := pc.col;
-            pp.esPosicion := true;
-            encontrado := true;
-            pp.p := posicionActual;
+            pp.esPosicion := false;  
+           
+            end;
         end
-        else
+        else if (lineaActual = desde.linea) then
         begin
-        pp.esPosicion := false;
-        txt := txt^.sig; 
-        lineaActual := lineaActual + 1;
+           // writeLn('no');
+            buscarCadenaEnLineaDesde (c, txt^.info, desde.columna,pc); 
         end;
-    end;
+        txt := txt^.sig;
+        lineaActual := lineaActual + 1;
 
+    end;}
+
+
+ var 
+    lineaActual :integer;
+    pc : PosibleColumna;
+begin
+   
+    lineaActual := 1;
+    pc.esColumna := false;
+
+    while (txt <> NIL) And (pp.esPosicion = false) do 
+    begin
+        if lineaActual >= desde.linea then
+        begin
+            if lineaActual = desde.linea then 
+                buscarCadenaEnLineaDesde (c, txt^.info, desde.columna,pc)
+            else 
+                buscarCadenaEnLineaDesde (c, txt^.info, 1,pc);
+
+
+            if pc.esColumna = true then
+            begin
+                pp.esPosicion := true;
+                pp.p.columna := pc.col;
+            end
+            else
+            begin
+                pp.esPosicion := false;
+            end;
+        end;
+
+        txt := txt^.sig;
+        lineaActual := lineaActual + 1;
+    end;
 end;
 
 

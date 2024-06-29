@@ -1,0 +1,74 @@
+Ingrese Nombre de Archivo: --------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Ingrese línea: Ingrese columna: Texto a buscar:
+Buena Programacion 1 para todos
+Programacion 1 - curso 2024 - primer semestreBuena Programacion 1 para todos
+Buena Programacion 1 para todos
+Informacion General del CursoBuena Programacion 1 para todos
+Buena Programacion 1 para todos
+Este curso se dicta en modalidad presencial.Buena Programacion 1 para todos
+Cada estudiante debera asistir a clase en algunoBuena Programacion 1 para todos
+de los grupos definidos en la seccion de Horarios y Docentes.Buena Programacion 1 para todos
+En cada grupo, se dictaran dos clases semanalesBuena Programacion 1 para todos
+de una hora y media de duracion cada una.Buena Programacion 1 para todos
+Se esta analizando la posibilidad de definir una alternativa virtual,Buena Programacion 1 para todos
+se anunciara oportunamente.Buena Programacion 1 para todos
+Buena Programacion 1 para todos
+Las clases tendran como principal objetivo repasar conceptos teoricosBuena Programacion 1 para todos
+y discutir soluciones de ejercicios, asi como responder dudas sobre teorico,Buena Programacion 1 para todos
+ejercicios o tareas de laboratorio. En el correr del semestre se iran publicandoBuena Programacion 1 para todos
+modulos en EVA correspondientes a los distintos temas,Buena Programacion 1 para todos
+que incluiran diferentes materiales: guias teoricas, repartidos de ejercicios,Buena Programacion 1 para todos
+videos de OpenFing (clases dictadas en 2016), entre otros.Buena Programacion 1 para todos
+Los estudiantes deberan estudiar los temas del curso a partir deBuena Programacion 1 para todos
+dichos materiales previo a la clase y realizar ejercicios.Buena Programacion 1 para todos
+Estos materiales, junto con la bibliografia definida en el programa,Buena Programacion 1 para todos
+son imprescindibles para seguir el curso.Buena Programacion 1 para todos
+No se hara una presentacion exhaustiva de cada nuevo tema en clase.Buena Programacion 1 para todos
+Buena Programacion 1 para todos
+En cada modulo se habilitaran foros de consultas para cada tema,Buena Programacion 1 para todos
+que se atenderan todos los dias.Buena Programacion 1 para todos
+Todos los estudiantes deben acceder regularmente a este recurso,Buena Programacion 1 para todos
+tanto para plantear sus propias dudas como para responder consultasBuena Programacion 1 para todos
+de otros estudiantes y estar al tanto de los intercambios que se van dando.Buena Programacion 1 para todos
+Buena Programacion 1 para todos
+Todas las consultas sobre temas generales del cursoBuena Programacion 1 para todos
+deben plantearse en el Foro General.Buena Programacion 1 para todos
+No se deben enviar consultas directamente a los docentes,Buena Programacion 1 para todos
+salvo para plantear situaciones particulares, excepciones,Buena Programacion 1 para todos
+problemas especificos del estudiante.Buena Programacion 1 para todos
+Buena Programacion 1 para todos
+Importante: Programacion 1 no se puede aprobar con examen libre,Buena Programacion 1 para todos
+es obligatorio inscribirse al curso y aprobarlo.Buena Programacion 1 para todos
+La cantidad de veces que se puede recursar es ilimitada,Buena Programacion 1 para todos
+no tiene limite de cursadas.Buena Programacion 1 para todos
+Buena Programacion 1 para todos
+Buena Programacion 1 para todosResultado: 
+No se encuentra
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Edición finalizada.
