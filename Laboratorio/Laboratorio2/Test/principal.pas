@@ -32,7 +32,7 @@ var
    opcion, ln : integer;
    txt, taux  : Texto;
    lin        : Linea;
-   ini,fin,i    : integer;
+   ini,fin    : integer;
    pos        : Posicion;
    c          : Cadena;
    tfmt       : TipoFormato;
@@ -116,14 +116,10 @@ begin
                 writeln ('Resultado: ');
                 mostrarPosiblePosicion (pp);
                 if pp.esPosicion then
-                begin
-                  for i:= 1 to pp.p.linea do
-                  begin
-                   //  writeLn('L:',pp.p.linea, ' C:',pp.p.columna);
-                  end;
+                begin     
                   lin := ubicarLineaEnTexto (txt, pp.p.linea)^.info;
                   mostrarLineaCol (lin, pp.p.columna)
-                end
+                end;
              end;
         { insertarCadenaEnLinea }
         6   :
