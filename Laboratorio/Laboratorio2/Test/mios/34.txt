@@ -729,8 +729,42 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4m	[0m[1m[3m[4m[0m[1m[3m�[0m[1m[3m[4m
-[0m[0m [0m[1m[3m[4m([0m[1m[3m�[0m[1m[3m[4me[0m[1m[3ms[0mp[0m[1m[3m[4mo[0m[1m[3m[4mn[0md[0mi[0m[1m[3me[0m[1m[3m[4mn[0m[1m[3m[4mt[0m[1m[3me[0m[1m[3ms[0m [0ma[0m [0ml[0mo[0ms[0m [0md[0mi[0ms[0mt[0mi[0mn[0mt[0m
+Ingrese línea: Ingrese columna: Ingrese cadena: aux.tope: 34| ln.tope: 54| c.tope: 34
+ aux.Cars[1] := ln.Cars[54].car
+ aux.Cars[2] := ln.Cars[53].car
+ aux.Cars[3] := ln.Cars[52].car
+ aux.Cars[4] := ln.Cars[51].car
+ aux.Cars[5] := ln.Cars[50].car
+ aux.Cars[6] := ln.Cars[49].car
+ aux.Cars[7] := ln.Cars[48].car
+ aux.Cars[8] := ln.Cars[47].car
+ aux.Cars[9] := ln.Cars[46].car
+ aux.Cars[10] := ln.Cars[45].car
+ aux.Cars[11] := ln.Cars[44].car
+ aux.Cars[12] := ln.Cars[43].car
+ aux.Cars[13] := ln.Cars[42].car
+ aux.Cars[14] := ln.Cars[41].car
+ aux.Cars[15] := ln.Cars[40].car
+ aux.Cars[16] := ln.Cars[39].car
+ aux.Cars[17] := ln.Cars[38].car
+ aux.Cars[18] := ln.Cars[37].car
+ aux.Cars[19] := ln.Cars[36].car
+ aux.Cars[20] := ln.Cars[35].car
+ aux.Cars[21] := ln.Cars[34].car
+ aux.Cars[22] := ln.Cars[33].car
+ aux.Cars[23] := ln.Cars[32].car
+ aux.Cars[24] := ln.Cars[31].car
+ aux.Cars[25] := ln.Cars[30].car
+ aux.Cars[26] := ln.Cars[29].car
+ aux.Cars[27] := ln.Cars[28].car
+ aux.Cars[28] := ln.Cars[27].car
+ aux.Cars[29] := ln.Cars[26].car
+ aux.Cars[30] := ln.Cars[25].car
+ aux.Cars[31] := ln.Cars[24].car
+ aux.Cars[32] := ln.Cars[23].car
+ aux.Cars[33] := ln.Cars[22].car
+ aux.Cars[34] := ln.Cars[21].car
+Línea sobrante:[1m[3m[4m,[0m[1m[3m[4ms[0m[1m[3ma[0m[1m[3m[4mm[0me[0mt[0m[1m[3m[4m [0m[1m[3ms[0m[1m[3m[4mo[0m[1m[3mt[0mn[0m[1m[3m[4mi[0m[1m[3m[4mt[0ms[0mi[0m[1m[3md[0m[1m[3m[4m [0m[1m[3m[4ms[0m[1m[3mo[0m[1m[3ml[0m [0ma[0m [0ms[0me[0mt[0mn[0me[0mi[0md[0mn[0mo[0mp[0ms[0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------
@@ -761,8 +795,7 @@ Ingrese Opción
 14. y[0m [0md[0mi[0ms[0mc[0mu[0mt[0mi[0mr[0m [0ms[0mo[0ml[0mu[0mc[0mi[0mo[0mn[0me[0ms[0m [0md[0me[0m [0me[0mj[0me[0mr[0mc[0mi[0mc[0mi[0mo[0ms[0m,[0m [0ma[0ms[0mi[0m [0mc[0mo[0mm[0mo[0m [0mr[0me[0ms[0mp[0mo[0mn[0md[0me[0mr[0m [0md[0mu[0md[0ma[0ms[0m [0ms[0mo[0mb[0mr[0me[0m [0mt[0me[0mo[0mr[0mi[0mc[0mo[0m,[0m
 15. e[0mj[0me[0mr[0mc[0mi[0mc[0mi[0mo[0ms[0m [0mo[0m [0mt[0ma[0mr[0me[0ma[0ms[0m [0md[0me[0m [0ml[0ma[0mb[0mo[0mr[0ma[0mt[0mo[0mr[0mi[0mo[0m.[0m [0mE[0mn[0m [0me[0ml[0m [0mc[0mo[0mr[0mr[0me[0mr[0m [0md[0me[0ml[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0ms[0me[0m [0mi[0mr[0ma[0mn[0m [0mp[0mu[0mb[0ml[0mi[0mc[0ma[0mn[0md[0mo[0m
 16. m[0mo[0md[0mu[0ml[0mo[0ms[0m [0me[0mn[0m [0mE[0mV[0mA[0m,[0m [0me[0ms[0mt[0ma[0m [0ml[0mi[0mn[0me[0ma[0m [0mq[0mu[0me[0md[0ma[0m [0mm[0mu[0my[0m [0ma[0mt[0mr[0ma[0mv[0me[0ms[0ma[0md[0m
-17. 	[0m[0m�[0m
-[0m[0m [0m([0m�[0me[0ms[0mp[0mo[0mn[0md[0mi[0me[0mn[0mt[0me[0ms[0m [0ma[0m [0ml[0mo[0ms[0m [0md[0mi[0ms[0mt[0mi[0mn[0mt[0m
+17. ,[0ms[0ma[0mm[0me[0mt[0m [0ms[0mo[0mt[0mn[0mi[0mt[0ms[0mi[0md[0m [0ms[0mo[0ml[0m [0ma[0m [0ms[0me[0mt[0mn[0me[0mi[0md[0mn[0mo[0mp[0ms[0m
 18. q[0mu[0me[0m [0mi[0mn[0mc[0ml[0mu[0mi[0mr[0ma[0mn[0m [0md[0mi[0mf[0me[0mr[0me[0mn[0mt[0me[0ms[0m [0mm[0ma[0mt[0me[0mr[0mi[0ma[0ml[0me[0ms[0m:[0m [0mg[0mu[0mi[0ma[0ms[0m [0mt[0me[0mo[0mr[0mi[0mc[0ma[0ms[0m,[0m [0mr[0me[0mp[0ma[0mr[0mt[0mi[0md[0mo[0ms[0m [0md[0me[0m [0me[0mj[0me[0mr[0mc[0mi[0mc[0mi[0mo[0ms[0m,[0m
 19. v[0mi[0md[0me[0mo[0ms[0m [0md[0me[0m [0mO[0mp[0me[0mn[0mF[0mi[0mn[0mg[0m [0m([0mc[0ml[0ma[0ms[0me[0ms[0m [0md[0mi[0mc[0mt[0ma[0md[0ma[0ms[0m [0me[0mn[0m [0m2[0m0[0m1[0m6[0m)[0m,[0m [0me[0mn[0mt[0mr[0me[0m [0mo[0mt[0mr[0mo[0ms[0m.[0m
 20. L[0mo[0ms[0m [0me[0ms[0mt[0mu[0md[0mi[0ma[0mn[0mt[0me[0ms[0m [0md[0me[0mb[0me[0mr[0ma[0mn[0m [0me[0ms[0mt[0mu[0md[0mi[0ma[0mr[0m [0ml[0mo[0ms[0m [0mt[0me[0mm[0ma[0ms[0m [0md[0me[0ml[0m [0mc[0mu[0mr[0ms[0mo[0m [0ma[0m [0mp[0ma[0mr[0mt[0mi[0mr[0m [0md[0me[0m
@@ -803,4 +836,83 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: 
+Ingrese línea: Ingrese columna: Ingrese cadena: aux.tope: 54| ln.tope: 34| c.tope: 54
+ aux.Cars[1] := ln.Cars[34].car
+ aux.Cars[2] := ln.Cars[33].car
+ aux.Cars[3] := ln.Cars[32].car
+ aux.Cars[4] := ln.Cars[31].car
+ aux.Cars[5] := ln.Cars[30].car
+ aux.Cars[6] := ln.Cars[29].car
+ aux.Cars[7] := ln.Cars[28].car
+ aux.Cars[8] := ln.Cars[27].car
+ aux.Cars[9] := ln.Cars[26].car
+ aux.Cars[10] := ln.Cars[25].car
+ aux.Cars[11] := ln.Cars[24].car
+ aux.Cars[12] := ln.Cars[23].car
+ aux.Cars[13] := ln.Cars[22].car
+ aux.Cars[14] := ln.Cars[21].car
+ aux.Cars[15] := ln.Cars[20].car
+ aux.Cars[16] := ln.Cars[19].car
+ aux.Cars[17] := ln.Cars[18].car
+ aux.Cars[18] := ln.Cars[17].car
+ aux.Cars[19] := ln.Cars[16].car
+ aux.Cars[20] := ln.Cars[15].car
+ aux.Cars[21] := ln.Cars[14].car
+ aux.Cars[22] := ln.Cars[13].car
+ aux.Cars[23] := ln.Cars[12].car
+ aux.Cars[24] := ln.Cars[11].car
+ aux.Cars[25] := ln.Cars[10].car
+ aux.Cars[26] := ln.Cars[9].car
+ aux.Cars[27] := ln.Cars[8].car
+ aux.Cars[28] := ln.Cars[7].car
+ aux.Cars[29] := ln.Cars[6].car
+ aux.Cars[30] := ln.Cars[5].car
+ aux.Cars[31] := ln.Cars[4].car
+ aux.Cars[32] := ln.Cars[3].car
+ aux.Cars[33] := ln.Cars[2].car
+ aux.Cars[34] := ln.Cars[1].car
+Línea sobrante:[1m[3m[4ms[0m[1m[3m[4mp[0m[1m[3mo[0m[1m[3m[4mn[0md[0mi[0m[1m[3m[4me[0m[1m[3mn[0m[1m[3m[4mt[0m[1m[3me[0ms[0m[1m[3m[4m [0m[1m[3m[4ma[0m [0ml[0m[1m[3mo[0m[1m[3m[4ms[0m[1m[3m[4m [0m[1m[3md[0m[1m[3mi[0ms[0mt[0mi[0mn[0mt[0mo[0ms[0m [0mt[0me[0mm[0ma[0ms[0m,[0m [0m [0m [0m [0m [0m [0m[1m[3m[4ml[0m[1m[3m[4m�[0m[1m[0m [0m [0m [0m[1m[3m[4ml[0m[1m[3m[4m�[0m[1m[0m [0m [0m [0m[1m[3m[4m�[0m[1m[3m[4m�[0m
+Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Opción inexistente
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------
+Opción inexistente
+--------------------------------
+Ingrese Opción
+--------------------------------
+0=fin
+1=todosTienenFormatoEnLinea
+2=aplicarFormatoEnLinea
+3=contarCaracteresEnTexto
+4=buscarCadenaEnLineaDesde
+5=buscarCadenaEnTextoDesde
+6=insertarCadenaEnLinea
+7=insertarLineaEnTexto
+100=mostrar texto
+101=mostrar formatos
+--------------------------------

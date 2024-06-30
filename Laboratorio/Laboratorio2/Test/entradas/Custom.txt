@@ -1,6 +1,55 @@
 textos/texto3.txt
 
-5
+6
+16
+15
+, esta linea queda muy atravesada,
+1
+
+100
+
+6
 17
-20
-Buena Programacion 1 para todos
+9
+ esta linea nueva queda media vacia, la lleno con esto
+
+6
+43
+32
+!!!!!!!!!!!!!111uno
+
+100
+
+7
+44
+
+
+7
+45
+  _____ __      __ 
+
+7
+46
+ |  __ /_ |  _  \ \ 
+
+7
+47
+ | |__) | | (_)  | |
+
+7
+48
+ |  ___/| |      | |
+
+7
+49
+ | |    | |  _   | |
+
+7
+50
+ |_|    |_| (_)  | |
+
+7
+51
+                /_/ 
+
+100

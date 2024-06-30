@@ -131,7 +131,9 @@ Ejecutamos nuestro programa de la siguiente forma:
     ./principal  < entradas/14.txt  > mios/14.txt
     ./principal  < entradas/20.txt  > mios/20.txt
     ./principal  < entradas/31.txt  > mios/31.txt
-    ./principal  < entradas/32.txt  > mios/32.txt
+    ./principal  < entradas/33.txt  > mios/32.txt
+    ./principal  < entradas/33.txt  > mios/33.txt
+    ./principal  < entradas/34.txt  > mios/34.txt
     ./principal  < entradas/40.txt  > mios/40.txt
 
     ./principal  < entradas/custom.txt  > mios/custom.txt
@@ -150,6 +152,8 @@ Luego se debe verificar que la salida obtenida coincida con la salida esperada e
     diff -w  mios/20.txt  salidas/20.txt 
     diff -w  mios/31.txt  salidas/31.txt 
     diff -w  mios/32.txt  salidas/32.txt 
+    diff -w  mios/33.txt  salidas/33.txt 
+    diff -w  mios/34.txt  salidas/34.txt 
     diff -w  mios/40.txt  salidas/40.txt 
 
     diff -w  mios/custom.txt salidas/custom.txt

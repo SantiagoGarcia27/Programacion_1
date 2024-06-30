@@ -66,73 +66,33 @@ end;
 function LineaContieneCadena (c : Cadena; ln : linea; desde : RangoColumna; var j : integer) : boolean;
 Var i,l,pocicionInicial : integer;
 begin
-     l := 1;
-    { for i := 1 to ln.tope do
-         writeLn(ln.cars[i].car,'|', c.cars[l]);}
-
-   { for i := 1 to ln.tope do
-    begin
-        write(ln.cars[i].car);
-        if(ln.cars[i].car = '.') then 
-            writeLn(' ');
-    end;}
+    l := 1;
     i:= desde;
-  
-    //writeLn('test1');
-
-   // writeln('ln.tope: ',ln.tope,'| c.tope: ',c.tope);
     
-  
     while (i <= ln.tope) And (l < c.tope) do
     begin
-  
-         // write(i,'|');
-        //writeLn(ln.cars[i].car,'|', c.cars[l]);
-       // write('[',ln.cars[i].car,'|', c.cars[l],']');
-       
-       // writeln(i,'|', ln.tope);
-
-       // write(ln.cars[i].car);
-       
-       
-       // writeln('[',ln.cars[i].car,'|', c.cars[l],']');
-      {  if(ln.cars[i].car = '.') then writeLn(' ');}
         if ln.cars[i].car = c.cars[l] then
         begin
-           // writeLn('a');
             l := l + 1;
 
             if l = 2 then
             begin
                 pocicionInicial := i;
-        //        writeln('Entro | index: ',i,'| tope: ', ln.tope,'| l: ',l);
             end;
-           {if l > 2 then
-            begin
-                writeln('Next | index: ',i,'| tope: ', ln.tope,'| l: ',l);
-            end;}
-            //write(l,'|');
-          //write('si|');
         end
         else
         begin
-            //writeln('c');
             if(l > 1) then 
             begin
-               // writeLn('rotura: ',l);
                 l := 1;     
             end;
             pocicionInicial := 1;
-            // write('no|');
         end;
         i := i + 1;
     end;
-    //write('|',l,'|', c.tope,'|');  
     j := pocicionInicial;
-    //writeLn('fin: ',l = c.tope,'| l = ',l,'| c.tope: ',c.tope,'| index: ',j,'| tope: ',ln.tope);
     
     LineaContieneCadena := l = c.tope;
-    //writeln('-----------------------------------------');
 end;
 
 
@@ -144,29 +104,12 @@ procedure buscarCadenaEnLineaDesde ( c : Cadena; ln : Linea; desde : RangoColumn
 Var j : integer;
 
 begin
-  //printLn('test0_');
-    
-       { writeLn('c.tope: ',c.tope,'| ln.tope: ',ln.tope,'| desde: ',desde);
-        write('cadena: ');
-        for j := 1 to c.tope do
-        begin
-            write(c.cars[j]);
-        end;
-        writeLn('');
-        write('linea: ');
-        for j := 1 to ln.tope do
-        begin
-            write(ln.Cars[j].car);
-        end;
-        writeLn('');}
     j := 1;
-    //writeLn('resultado: ',LineaContieneCadena(c,ln,desde,j) And (j >= 1),'| j: ', j, '| LineaContieneCadena: ', LineaContieneCadena(c,ln,desde,j));
     if (LineaContieneCadena(c,ln,desde,j)) AND (j >= 1) then
     begin  
-       // writeLn('test1_');
-       // writeLn(j - c.tope); 
+       
         pc.esColumna := true;
-        pc.col := j; //- c.tope;
+        pc.col := j;
     end
     else 
     begin
@@ -220,23 +163,45 @@ begin
     end;
 end;
 
-
-
-
-
 procedure guardarSobrante(c:cadena; columna:RangoColumna; ln : linea;var aux : linea);
-var fin,i : integer;
+var i : integer;
 begin
-    fin := ln.tope;
+     if (ln.tope + c.tope) > MAXCOL then
+     begin
+        aux.tope := c.tope;
+        
+        writeLn('aux.tope: ',aux.tope,'| ln.tope: ',ln.tope,'| c.tope: ',c.tope);
+        for i:= 0 to c.tope-1 do
+        begin
+            if(ln.tope- i > 0) then
+            begin
+                // writeLn('[i: ',i,'| ln.tope-i: ',ln.tope-i,'| c.tope: ',c.tope,'| ln.tope: ',ln.tope,']');
+                writeLn(' aux.Cars[',aux.tope-i,'] := ln.Cars[',ln.tope-i,'].car');
+                aux.Cars[aux.tope - i].car := ln.Cars[MAXCOL - i].car;
+            end;
+        end;    
+
+        writeLn('Cadena: ');
+        for i:= 1 to aux.tope do
+        write(aux.Cars[i].car);
+        writeLn('');
+    end;
+
+
+
+
+
+
+   { fin := ln.tope;
     if ln.tope + c.tope > MAXCOL then
     begin
         for i := fin-c.tope to fin do
         begin
+            writeLn('[aux tope: ',aux.tope,'| ln tope: ',fin,'| aux idex: ',aux.tope - (fin - i ),'| ln index: ',i,'| c tope: ',c.tope,']');
             aux.Cars[aux.tope - (fin - i)].car := ln.Cars[i].car;  //guardar los que se salen del arreglo
-            //writeLn('|',aux.Cars[aux.tope - (fin - i)].car,'|');
         end;    
     end;
-    aux.tope := c.tope;
+    aux.tope := c.tope;}
 end;
 
 procedure moverElementos(c:Cadena;columna :RangoColumna; var ln : Linea);
@@ -250,10 +215,7 @@ begin
     for i := ln.tope Downto columna do //mueve todo 
     begin    
         if (i - c.tope) > 0 then   
-           // writeLn('1 | [Ultimo: ',ln.cars[i].car,'| Primero: ',ln.cars[i - 1].car,']  tope: ',ln.tope,'| i: [',i,'|',i-1,']');
             ln.cars[i].car := ln.cars[i - c.tope].car; 
-            //writeLn(i,'.|',ln.cars[i].car,'|');
-            //writeLn('2 | [',ln.cars[i].car,'|',ln.cars[i - (c.tope -2)].car,']');
         end;
 end;
 
@@ -275,8 +237,10 @@ begin
   //  writeLn('Tope Entrada:', ln.tope);
     if ln.tope + c.tope > MAXCOL then //Guardo los que salen de la linea
     begin
+        aux.tope := c.tope;
         guardarSobrante(c,columna,ln,aux);
         pln.esLinea := True;
+        ln.tope := MAXCOL;
         pln.l := aux;
     end;
 
@@ -289,29 +253,11 @@ begin
         ln.tope := c.tope;
     end;
 
-
-   // writeLn('|', ln.tope,'|',c.tope,'|');
-    //writeLn('Columna:',columna,'| Tope: ',c.tope); 
     for i := 1 to c.tope do // rellena con la cadena
-    begin      
-        //writeLn('Ln char:',ln.cars[columna + i].car,'| ln tope: ',ln.tope,'| c char: ',c.cars[inicio],'| c tope:',c.tope);
-        //write('|',columna + i,',',i+1,'|');
-        ln.cars[columna + (i-1)].car := c.cars[i];
-        //writeLn(ln.cars[columna + i].car,'|',c.cars[inicio]);          
+    begin         
+        ln.cars[columna + (i-1)].car := c.cars[i];   
     end;
-    // for i := 1 to ln.tope do
-   // writeLn('Tope: ',ln.tope,'index: ',i,'|Letra: ', ln.cars[i].car);
-    {if(ln.tope - c.tope > 0) then 
-        ln.tope := ln.tope - c.tope;}
     
-
-   { inicio := 1;
-    for i := columna to c.tope do // rellena con la cadena
-    begin
-        writeLn(ln.cars[i].car,'|',c.cars[inicio],'| tope:',ln.tope);
-        inicio := inicio + 1;
-    end;}
-
     for i := 1 to ln.tope do
     begin
         with ln.Cars[i] do
@@ -351,9 +297,6 @@ var
 begin
     new (NuevaLinea);
     AliasTexto := txt;
-    //contador := 1;
-   //TextoEntrada := txt;
-    
     AliasTexto := ubicarLineaEnTexto(txt,nln-1);
     if(AliasTexto <> NIL) then
     begin
