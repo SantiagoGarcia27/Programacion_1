@@ -116,10 +116,10 @@ begin
                 writeln ('Resultado: ');
                 mostrarPosiblePosicion (pp);
                 if pp.esPosicion then
-                begin     
-                  lin := ubicarLineaEnTexto (txt, pp.p.linea)^.info;
-                  mostrarLineaCol (lin, pp.p.columna)
-                end;
+                begin
+                   lin := ubicarLineaEnTexto (txt, pp.p.linea)^.info;
+                   mostrarLineaCol (lin, pp.p.columna)
+                end
              end;
         { insertarCadenaEnLinea }
         6   :

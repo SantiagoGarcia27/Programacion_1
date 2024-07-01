@@ -15,6 +15,11 @@ begin
 end;
 
 
+procedure FormatearElemento( tfmt : TipoFormato; b : boolean; var c : Caracter);
+begin
+    c.fmt[tfmt] := b;
+end;
+
 procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna ; var ln : Linea ); //2
 { Aplica el formato `tfmt` a los caracteres de `ln` entre las columnas `ini` y `fin`, 
   incluídos los extremos. 
@@ -24,23 +29,14 @@ procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna ; 
   Precondiciones: 1 <= ini <= ln.tope
                   1 <= fin <= ln.tope }
 var i : integer;
-    
+    b : boolean;
 begin
     i := ini;
-    if todosTienenFormatoEnLinea(tfmt,ini,fin,ln) then
+
+    b := not todosTienenFormatoEnLinea(tfmt,ini,fin,ln);
+    for i := ini to fin do
     begin
-        for i := ini to fin do
-        begin
-            ln.cars[i].fmt[tfmt] := false; 
-            //writeLn(ln.cars[i].car,'|',ln.cars[i].fmt[tfmt],'|','[',ln.cars[i].fmt[Neg],',',ln.cars[i].fmt[Ita],',',ln.cars[i].fmt[Sub],']');
-        end;
-    end
-    else
-    begin
-        for i := ini to fin do
-        begin
-            ln.cars[i].fmt[tfmt] := true;
-        end;
+        FormatearElemento(tfmt, b, ln.cars[i]);
     end;
 end;
 
@@ -168,55 +164,73 @@ var i : integer;
 begin
      if (ln.tope + c.tope) > MAXCOL then
      begin
-        aux.tope := c.tope;
+        aux.tope := (ln.tope + c.tope) - MAXCOL;
         
-        writeLn('aux.tope: ',aux.tope,'| ln.tope: ',ln.tope,'| c.tope: ',c.tope);
-        for i:= 0 to c.tope-1 do
+       // writeLn('aux.tope: ',aux.tope,'| ln.tope: ',ln.tope,'| c.tope: ',c.tope);
+        for i:= 0 to aux.tope-1 do
         begin
-            if(ln.tope- i > 0) then
+            if(ln.tope - i > 0) then
             begin
                 // writeLn('[i: ',i,'| ln.tope-i: ',ln.tope-i,'| c.tope: ',c.tope,'| ln.tope: ',ln.tope,']');
-                writeLn(' aux.Cars[',aux.tope-i,'] := ln.Cars[',ln.tope-i,'].car');
-                aux.Cars[aux.tope - i].car := ln.Cars[MAXCOL - i].car;
+             
+               // writeLn(' aux.Cars[',aux.tope-i,'] := ln.Cars[',ln.tope-i,'].car');
+                aux.Cars[aux.tope - i].car := ln.Cars[ln.tope - i].car;
+               // writeLn(' aux.Cars[',aux.tope-i,']: ',aux.Cars[aux.tope - i].car,'| ln.Cars[',ln.tope-i,'].car: ',ln.Cars[ln.tope-i].car,'| i: ',i);
             end;
         end;    
 
-        writeLn('Cadena: ');
+       { writeLn('Cadena: ');
         for i:= 1 to aux.tope do
         write(aux.Cars[i].car);
-        writeLn('');
+        writeLn('');}
     end;
-
-
-
-
-
-
-   { fin := ln.tope;
-    if ln.tope + c.tope > MAXCOL then
-    begin
-        for i := fin-c.tope to fin do
-        begin
-            writeLn('[aux tope: ',aux.tope,'| ln tope: ',fin,'| aux idex: ',aux.tope - (fin - i ),'| ln index: ',i,'| c tope: ',c.tope,']');
-            aux.Cars[aux.tope - (fin - i)].car := ln.Cars[i].car;  //guardar los que se salen del arreglo
-        end;    
-    end;
-    aux.tope := c.tope;}
 end;
 
 procedure moverElementos(c:Cadena;columna :RangoColumna; var ln : Linea);
 var i : integer;
+    //j : integer;
+    aux : Caracter;
+    //debug : Linea;
 begin
     if ln.tope + c.tope <= MAXCOL then
         ln.tope := ln.tope + c.tope
     else
-        ln.tope := ln.tope + (MAXCOL - (ln.tope +  c.tope));  
-
-    for i := ln.tope Downto columna do //mueve todo 
-    begin    
-        if (i - c.tope) > 0 then   
-            ln.cars[i].car := ln.cars[i - c.tope].car; 
+        ln.tope := MAXCOL;  
+        //debug := ln;
+       
+       // writeln('ln.tope: ',ln.tope,'| MAXCOL: ',MAXCOL,'|c.tope: ',c.tope);
+        //writeLn('contenido pre mover:');
+       
+        for i := ln.tope + c.tope Downto columna do //mueve todo 
+        begin    
+            //writeLn('[',ln.cars[i].car,'|',ln.cars[i+1].car,']');
+            if(i - c.tope > 0) and (i <= MAXCOL) then
+            begin
+            aux := ln.cars[i - c.tope];
+            ln.cars[i] := aux;
+            //writeLn('[',ln.cars[i].car,'|',ln.cars[i+1].car,']');
+            // ln.cars[i].car := ln.cars[i - c.tope].car; 
+            end;
         end;
+     {   writeLn('contenido post mover:');
+        for i:= 1 to MAXCOL DO
+        writeLn('[',debug.cars[i].car,'|',ln.cars[i].car,']');
+        writeLn('');}
+end;
+
+procedure RellenarCadena(c : cadena;columna : RangoColumna;formato : Formato; var ln: linea);
+var i : integer;
+begin
+    for i := 1 to c.tope do // rellena con la cadena
+    begin         
+        ln.cars[columna + (i-1)].car := c.cars[i]; 
+        ln.cars[columna + (i-1)].fmt := formato;
+       // write(ln.cars[i].car);
+    end;
+      {  writeLn('contenido post rellenar:');
+        for i:= 1 to MAXCOL DO
+        write(ln.cars[i].car);
+        writeLn('');}
 end;
 
 procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna; var ln : linea; var pln : PosibleLinea ); // 6
@@ -233,10 +247,33 @@ procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna; var ln : l
 var 
     aux : linea;
     i : integer;
+    formatoAux : Formato;
+
 begin
-  //  writeLn('Tope Entrada:', ln.tope);
+   // writeLn('Tope Entrada:', ln.tope);
+    pln.esLinea := false;
+
+    formatoAux[Neg] := false;
+    formatoAux[Ita] := false;
+    formatoAux[Sub] := false;
+
+    if(columna-1 > 1) then formatoAux := ln.Cars[columna-1].fmt;
+    for i := columna to ln.tope do
+    begin
+
+        with ln.Cars[i] do
+        begin
+            fmt[Neg] := false;
+            fmt[Ita] := false;
+            fmt[Sub] := false;
+        end;
+    end;
+
+    writeLn('[',formatoAux[Neg],',',formatoAux[Ita],',',formatoAux[Sub],'] og: [',ln.Cars[columna-1].fmt[Neg],',',ln.Cars[columna-1].fmt[Ita],',',ln.Cars[columna-1].fmt[Sub],'Caracter: "',ln.Cars[columna-1].car,'" ]'); 
+
     if ln.tope + c.tope > MAXCOL then //Guardo los que salen de la linea
     begin
+        //writeLn('[ln.tope: ',ln.tope,'| c.tope: ',c.tope,'| MAXCOL: ',MAXCOL,'| ln.tope+c.tope: ',ln.tope+c.tope,']');
         aux.tope := c.tope;
         guardarSobrante(c,columna,ln,aux);
         pln.esLinea := True;
@@ -253,20 +290,10 @@ begin
         ln.tope := c.tope;
     end;
 
-    for i := 1 to c.tope do // rellena con la cadena
-    begin         
-        ln.cars[columna + (i-1)].car := c.cars[i];   
-    end;
+    RellenarCadena(c,columna,formatoAux,ln);
+   
     
-    for i := 1 to ln.tope do
-    begin
-        with ln.Cars[i] do
-        begin
-            fmt[Neg] := false;
-            fmt[Ita] := false;
-            fmt[Sub] := false;
-        end;
-    end;
+   
 end;
 
 procedure LineaACadena (Plantilla : Linea; Var Objetivo : Cadena);
