@@ -12,7 +12,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4ms[0m[1m[3m[4m [0m[1m[3mt[0m[1m[3m[4me[0mm[0ma[0m[1m[3m[4ms[0m[1m[3m,[0m
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:s[0m [0mt[0me[0mm[0ma[0ms[0m,[0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------

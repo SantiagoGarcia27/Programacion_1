@@ -109,7 +109,6 @@ begin
     end
     else 
     begin
-       // writeLn('test2_');
         pc.esColumna := false;
     end;
 end;
@@ -165,57 +164,39 @@ begin
      if (ln.tope + c.tope) > MAXCOL then
      begin
         aux.tope := (ln.tope + c.tope) - MAXCOL;
-        
-       // writeLn('aux.tope: ',aux.tope,'| ln.tope: ',ln.tope,'| c.tope: ',c.tope);
+
         for i:= 0 to aux.tope-1 do
         begin
             if(ln.tope - i > 0) then
             begin
-                // writeLn('[i: ',i,'| ln.tope-i: ',ln.tope-i,'| c.tope: ',c.tope,'| ln.tope: ',ln.tope,']');
-             
-               // writeLn(' aux.Cars[',aux.tope-i,'] := ln.Cars[',ln.tope-i,'].car');
                 aux.Cars[aux.tope - i].car := ln.Cars[ln.tope - i].car;
-               // writeLn(' aux.Cars[',aux.tope-i,']: ',aux.Cars[aux.tope - i].car,'| ln.Cars[',ln.tope-i,'].car: ',ln.Cars[ln.tope-i].car,'| i: ',i);
+                aux.Cars[aux.tope - i].fmt := ln.Cars[ln.tope - i].fmt;
             end;
         end;    
-
-       { writeLn('Cadena: ');
-        for i:= 1 to aux.tope do
-        write(aux.Cars[i].car);
-        writeLn('');}
     end;
 end;
 
 procedure moverElementos(c:Cadena;columna :RangoColumna; var ln : Linea);
 var i : integer;
-    //j : integer;
     aux : Caracter;
-    //debug : Linea;
 begin
     if ln.tope + c.tope <= MAXCOL then
         ln.tope := ln.tope + c.tope
     else
         ln.tope := MAXCOL;  
-        //debug := ln;
-       
-       // writeln('ln.tope: ',ln.tope,'| MAXCOL: ',MAXCOL,'|c.tope: ',c.tope);
-        //writeLn('contenido pre mover:');
-       
+
         for i := ln.tope + c.tope Downto columna do //mueve todo 
         begin    
-            //writeLn('[',ln.cars[i].car,'|',ln.cars[i+1].car,']');
+
             if(i - c.tope > 0) and (i <= MAXCOL) then
             begin
-            aux := ln.cars[i - c.tope];
+            aux.car := ln.cars[i - c.tope].car;
+            aux.fmt := ln.cars[i - c.tope].fmt;
             ln.cars[i] := aux;
-            //writeLn('[',ln.cars[i].car,'|',ln.cars[i+1].car,']');
-            // ln.cars[i].car := ln.cars[i - c.tope].car; 
+         
             end;
         end;
-     {   writeLn('contenido post mover:');
-        for i:= 1 to MAXCOL DO
-        writeLn('[',debug.cars[i].car,'|',ln.cars[i].car,']');
-        writeLn('');}
+    
 end;
 
 procedure RellenarCadena(c : cadena;columna : RangoColumna;formato : Formato; var ln: linea);
@@ -224,13 +205,10 @@ begin
     for i := 1 to c.tope do // rellena con la cadena
     begin         
         ln.cars[columna + (i-1)].car := c.cars[i]; 
-        ln.cars[columna + (i-1)].fmt := formato;
-       // write(ln.cars[i].car);
+       
+        ln.cars[columna + (i-1)].fmt := formato;   
     end;
-      {  writeLn('contenido post rellenar:');
-        for i:= 1 to MAXCOL DO
-        write(ln.cars[i].car);
-        writeLn('');}
+    
 end;
 
 procedure insertarCadenaEnLinea ( c : Cadena; columna : RangoColumna; var ln : linea; var pln : PosibleLinea ); // 6
@@ -250,7 +228,6 @@ var
     formatoAux : Formato;
 
 begin
-   // writeLn('Tope Entrada:', ln.tope);
     pln.esLinea := false;
 
     formatoAux[Neg] := false;
@@ -268,12 +245,10 @@ begin
             fmt[Sub] := false;
         end;
     end;
-
-    writeLn('[',formatoAux[Neg],',',formatoAux[Ita],',',formatoAux[Sub],'] og: [',ln.Cars[columna-1].fmt[Neg],',',ln.Cars[columna-1].fmt[Ita],',',ln.Cars[columna-1].fmt[Sub],'Caracter: "',ln.Cars[columna-1].car,'" ]'); 
-
+ 
     if ln.tope + c.tope > MAXCOL then //Guardo los que salen de la linea
     begin
-        //writeLn('[ln.tope: ',ln.tope,'| c.tope: ',c.tope,'| MAXCOL: ',MAXCOL,'| ln.tope+c.tope: ',ln.tope+c.tope,']');
+        
         aux.tope := c.tope;
         guardarSobrante(c,columna,ln,aux);
         pln.esLinea := True;
@@ -284,6 +259,9 @@ begin
     if(ln.tope > 0) then
     begin 
         moverElementos(c,columna,ln);
+
+        for i := columna to ln.tope do
+            ln.Cars[i].fmt := formatoAux;
     end
     else
     begin
@@ -302,8 +280,7 @@ begin
     i:=1;
     LargoCadena := 0;
     for i := 1 to Plantilla.tope do // rellena cadenaAIncertar
-    begin 
-        //write(ln.Cars[i].car);    
+    begin  
         Objetivo.cars[i] := Plantilla.Cars[i].car;
         LargoCadena := LargoCadena + 1;
     end;

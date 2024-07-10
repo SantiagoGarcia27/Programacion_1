@@ -12,7 +12,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4mi[0m[1m[3m[4mn[0m[1m[3mc[0m[1m[3m[4mi[0md[0mi[0m[1m[3m[4md[0m[1m[3mu[0m[1m[3m[4mn[0m[1m[3mt[0m [0m[1m[3m[4mu[0m[1m[3m[4mt[0m [0ml[0m[1m[3ma[0m[1m[3m[4mb[0m[1m[3m[4mo[0m[1m[3mr[0m[1m[3m[4me[0m[1m[3m[4m [0m[1m[3m[4me[0m[1m[3m[4mt[0m[1m[3m[4m [0m[1m[3m[4md[0m[1m[3m[4mo[0m[1m[3m[4ml[0m[1m[3m[4mo[0m[1m[3m[4mr[0m[1m[3m[4me[0m[1m[3m[4m [0m[1m[3m[4mm[0m[1m[3m[4ma[0m[1m[3m[4mg[0m[1m[3m[4mn[0m[1m[3m[4ma[0m[1m[3m[4m [0m[1m[3m[4ma[0m[1m[3m[4ml[0m[1m[3m[4mi[0m[1m[3m[4mq[0m[1m[3m[4mu[0m[1ma[0m.[0m [0m
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:i[0mn[0mc[0mi[0md[0mi[0md[0mu[0mn[0mt[0m [0mu[0mt[0m [0ml[0ma[0mb[0mo[0mr[0me[0m [0me[0mt[0m [0md[0mo[0ml[0mo[0mr[0me[0m [0mm[0ma[0mg[0mn[0ma[0m [0ma[0ml[0mi[0mq[0mu[0ma[0m.[0m [0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------
@@ -48,7 +48,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4mi[0m[1m[3m[4ms[0m[1m[3m [0m[1m[3m[4mn[0mo[0ms[0m[1m[3m[4mt[0m[1m[3mr[0m[1m[3m[4mu[0m[1m[3md[0m [0m[1m[3m[4me[0m[1m[3m[4mx[0me[0mr[0m[1m[3mc[0m[1m[3m[4mi[0m[1m[3m[4mt[0m[1m[3ma[0m[1m[3mt[0mi[0mo[0mn[0m [0mu[0ml[0ml[0ma[0mm[0mc[0mo[0m [0ml[0ma[0mb[0mo[0mr[0mi[0ms[0m [0m[1m[3m[4mn[0m[1m[3m[4mi[0m[1ms[0mi[0m [0m
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:i[0ms[0m [0mn[0mo[0ms[0mt[0mr[0mu[0md[0m [0me[0mx[0me[0mr[0mc[0mi[0mt[0ma[0mt[0mi[0mo[0mn[0m [0mu[0ml[0ml[0ma[0mm[0mc[0mo[0m [0ml[0ma[0mb[0mo[0mr[0mi[0ms[0m [0mn[0mi[0ms[0mi[0m [0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------
@@ -85,7 +85,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4ms[0m[1m[3m[4m [0m[1m[3mn[0m[1m[3m[4mi[0ms[0mi[0m[1m[3m[4m [0m
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:s[0m [0mn[0mi[0ms[0mi[0m [0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------
@@ -123,7 +123,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4mc[0m[1m[3m[4ma[0m[1m[3mt[0m[1m[3m[4mi[0mo[0mn[0m[1m[3m[4me[0m[1m[3mm[0m[1m[3m[4mi[0m[1m[3ms[0m [0m[1m[3m[4mn[0m[1m[3m[4mo[0ms[0mt[0m[1m[3mr[0m[1m[3m[4mu[0m[1m[3m[4md[0m[1m[3m [0m[1me[0mx[0me[0mr[0mc[0mi[0mt[0ma[0mt[0mi[0mo[0mn[0m [0mu[0ml[0ml[0ma[0mm[0mc[0mo[0m[1m[3m[4m [0m[1m[3m[4ml[0m[1ma[0mb[0mo[0mr[0m[1m[3m[4mi[0m
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:c[0ma[0mt[0mi[0mo[0mn[0me[0mm[0mi[0ms[0m [0mn[0mo[0ms[0mt[0mr[0mu[0md[0m [0me[0mx[0me[0mr[0mc[0mi[0mt[0ma[0mt[0mi[0mo[0mn[0m [0mu[0ml[0ml[0ma[0mm[0mc[0mo[0m [0ml[0ma[0mb[0mo[0mr[0mi[0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------

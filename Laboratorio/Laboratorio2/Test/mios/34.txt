@@ -99,7 +99,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: No todos tienen formato subrayado
+Ingrese línea: Ingrese columna de inicio: Ingrese columna de fin: Ingrese Formato [0=negrita,1=italica,2=subrayado]: Todos tienen formato subrayado
 --------------------------------
 Ingrese Opción
 --------------------------------
@@ -156,7 +156,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3m[4mP[0m[1m[3m[4mr[0m[1m[3m[4mo[0m[1m[3m[4mg[0m[1m[3m[4mr[0m[1m[3m[4ma[0m[1m[3m[4mm[0m[1m[3m[4ma[0m[1m[3m[4mc[0m[1m[3m[4mi[0m[1m[3m[4mo[0m[1m[3m[4mn[0m[1m[3m[4m [0m[1m[3m[4m1[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mc[0m[1m[3m[4mu[0m[1m[3m[4mr[0m[1m[3m[4ms[0m[1m[3m[4mo[0m[1m[3m[4m [0m[1m[3m[4m2[0m[1m[3m[4m0[0m[1m[3m[4m2[0m[1m[3m[4m4[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mp[0m[1m[3m[4mr[0m[1m[3m[4mi[0m[1m[3m[4mm[0m[1m[3m[4me[0m[1m[3m[4mr[0m[1m[3m[4m [0m[1m[3m[4ms[0m[1m[3m[4me[0m[1m[3m[4mm[0m[1m[3m[4me[0m[1m[3m[4ms[0m[1m[3m[4mt[0m[1m[3m[4mr[0m[1m[3m[4me[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mu[0m[1m[3m[4md[0m[1m[3m[4me[0m[1m[3m[4ml[0m[1m[3m[4ma[0m[1m[3m[4mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. I[0mn[0mf[0mo[0mr[0mm[0ma[0mc[0mi[0mo[0mn[0m [0mG[0me[0mn[0me[0mr[0ma[0ml[0m [0md[0me[0ml[0m [0mC[0mu[0mr[0ms[0mo[0m
 4. 
@@ -227,7 +227,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3m[4mP[0m[1m[3m[4mr[0m[1m[3m[4mo[0m[1m[3m[4mg[0m[1m[3m[4mr[0m[1m[3m[4ma[0m[1m[3m[4mm[0m[1m[3m[4ma[0m[1m[3m[4mc[0m[1m[3m[4mi[0m[1m[3m[4mo[0m[1m[3m[4mn[0m[1m[3m[4m [0m[1m[3m[4m1[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mc[0m[1m[3m[4mu[0m[1m[3m[4mr[0m[1m[3m[4ms[0m[1m[3m[4mo[0m[1m[3m[4m [0m[1m[3m[4m2[0m[1m[3m[4m0[0m[1m[3m[4m2[0m[1m[3m[4m4[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mp[0m[1m[3m[4mr[0m[1m[3m[4mi[0m[1m[3m[4mm[0m[1m[3m[4me[0m[1m[3m[4mr[0m[1m[3m[4m [0m[1m[3m[4ms[0m[1m[3m[4me[0m[1m[3m[4mm[0m[1m[3m[4me[0m[1m[3m[4ms[0m[1m[3m[4mt[0m[1m[3m[4mr[0m[1m[3m[4me[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mf[0m[1m[3m[4mi[0m[1m[3m[4mn[0m[1m[3m[4mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. I[0mn[0mf[0mo[0mr[0mm[0ma[0mc[0mi[0mo[0mn[0m [0mG[0me[0mn[0me[0mr[0ma[0ml[0m [0md[0me[0ml[0m [0mC[0mu[0mr[0ms[0mo[0m
 4. 
@@ -312,7 +312,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3m[4mP[0m[1m[3m[4mr[0m[1m[3m[4mo[0m[1m[3m[4mg[0m[1m[3m[4mr[0m[1m[3m[4ma[0m[1m[3m[4mm[0m[1m[3m[4ma[0m[1m[3m[4mc[0m[1m[3m[4mi[0m[1m[3m[4mo[0m[1m[3m[4mn[0m[1m[3m[4m [0m[1m[3m[4m1[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mc[0m[1m[3m[4mu[0m[1m[3m[4mr[0m[1m[3m[4ms[0m[1m[3m[4mo[0m[1m[3m[4m [0m[1m[3m[4m2[0m[1m[3m[4m0[0m[1m[3m[4m2[0m[1m[3m[4m4[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mp[0m[1m[3m[4mr[0m[1m[3m[4mi[0m[1m[3m[4mm[0m[1m[3m[4me[0m[1m[3m[4mr[0m[1m[3m[4m [0m[1m[3m[4ms[0m[1m[3m[4me[0m[1m[3m[4mm[0m[1m[3m[4me[0m[1m[3m[4ms[0m[1m[3m[4mt[0m[1m[3m[4mr[0m[1m[3m[4me[0m[1m[3m[4m [0m[1m[3m[4m-[0m[1m[3m[4m [0m[1m[3m[4mf[0m[1m[3m[4mi[0m[1m[3m[4mn[0m[1m[3m[4mg[0m[4m [0m[4m-[0m[4m [0m[4mu[0m[4md[0m[4me[0m[4ml[0m[4ma[0m[4mr[0m
+1. [4mP[0m[4mr[0m[4mo[0m[4mg[0m[4mr[0m[4ma[0m[4mm[0m[4ma[0m[4mc[0m[4mi[0m[4mo[0m[4mn[0m[4m [0m[4m1[0m[4m [0m[4m-[0m[4m [0m[4mc[0m[4mu[0m[4mr[0m[4ms[0m[4mo[0m[4m [0m[4m2[0m[4m0[0m[4m2[0m[4m4[0m[4m [0m[4m-[0m[4m [0m[4mp[0m[4mr[0m[4mi[0m[4mm[0m[4me[0m[4mr[0m[4m [0m[4ms[0m[4me[0m[4mm[0m[4me[0m[4ms[0m[4mt[0m[4mr[0m[4me[0m[4m [0m[4m-[0m[4m [0m[4mf[0m[4mi[0m[4mn[0m[4mg[0m[4m [0m[4m-[0m[4m [0m[4mu[0m[4md[0m[4me[0m[4ml[0m[4ma[0m[4mr[0m
 2. 
 3. I[0mn[0mf[0mo[0mr[0mm[0ma[0mc[0mi[0mo[0mn[0m [0mG[0me[0mn[0me[0mr[0ma[0ml[0m [0md[0me[0ml[0m [0mC[0mu[0mr[0ms[0mo[0m
 4. 
@@ -382,7 +382,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. I[0mn[0mf[0mo[0mr[0mm[0ma[0mc[0mi[0mo[0mn[0m [0mG[0me[0mn[0me[0mr[0ma[0ml[0m [0md[0me[0ml[0m [0mC[0mu[0mr[0ms[0mo[0m
 4. 
@@ -494,7 +494,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. [1mI[0m[1mn[0m[1mf[0m[1mo[0m[1mr[0m[1mm[0m[1ma[0m[1mc[0m[1mi[0m[1mo[0m[1mn[0m[1m [0m[1mG[0m[1me[0m[1mn[0m[1me[0m[1mr[0m[1ma[0m[1ml[0m[1m [0m[1md[0m[1me[0m[1ml[0m[1m [0m[1mC[0m[1mu[0m[1mr[0m[1ms[0m[1mo[0m
 4. 
@@ -552,7 +552,7 @@ Ingrese Opción
 --------------------------------
 Ingrese línea: Ingrese columna: Texto a buscar: Resultado: 
 Columna:18
-[1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
                  ^
 --------------------------------
 Ingrese Opción
@@ -570,7 +570,7 @@ Ingrese Opción
 --------------------------------
 Ingrese línea: Ingrese columna: Texto a buscar: Resultado: 
 Columna:18
-[1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
                  ^
 --------------------------------
 Ingrese Opción
@@ -729,7 +729,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:[1m[3m[4ms[0m[1m[3m[4m [0m[1m[3mt[0m[1m[3m[4me[0mm[0ma[0m[1m[3m[4ms[0m[1m[3m,[0m
+Ingrese línea: Ingrese columna: Ingrese cadena: Línea sobrante:s[0m [0mt[0me[0mm[0ma[0ms[0m,[0m
 Insertar línea sobrante como siguiente? [0=no,1=si]--------------------------------
 Ingrese Opción
 --------------------------------
@@ -744,7 +744,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. [1mI[0m[1mn[0m[1mf[0m[1mo[0m[1mr[0m[1mm[0m[1ma[0m[1mc[0m[1mi[0m[1mo[0m[1mn[0m[1m [0m[1mG[0m[1me[0m[1mn[0m[1me[0m[1mr[0m[1ma[0m[1ml[0m[1m [0m[1md[0m[1me[0m[1ml[0m[1m [0m[1mC[0m[1mu[0m[1mr[0m[1ms[0m[1mo[0m
 4. 
@@ -831,7 +831,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. [1mI[0m[1mn[0m[1mf[0m[1mo[0m[1mr[0m[1mm[0m[1ma[0m[1mc[0m[1mi[0m[1mo[0m[1mn[0m[1m [0m[1mG[0m[1me[0m[1mn[0m[1me[0m[1mr[0m[1ma[0m[1ml[0m[1m [0m[1md[0m[1me[0m[1ml[0m[1m [0m[1mC[0m[1mu[0m[1mr[0m[1ms[0m[1mo[0m
 4. 
@@ -1000,7 +1000,7 @@ Ingrese Opción
 100=mostrar texto
 101=mostrar formatos
 --------------------------------
-1. [1m[3mP[0m[1m[3mr[0m[1m[3mo[0m[1m[3mg[0m[1m[3mr[0m[1m[3ma[0m[1m[3mm[0m[1m[3ma[0m[1m[3mc[0m[1m[3mi[0m[1m[3mo[0m[1m[3mn[0m[1m[3m [0m[1m[3m1[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mc[0m[1m[3mu[0m[1m[3mr[0m[1m[3ms[0m[1m[3mo[0m[1m[3m [0m[1m[3m2[0m[1m[3m0[0m[1m[3m2[0m[1m[3m4[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mp[0m[1m[3mr[0m[1m[3mi[0m[1m[3mm[0m[1m[3me[0m[1m[3mr[0m[1m[3m [0m[1m[3ms[0m[1m[3me[0m[1m[3mm[0m[1m[3me[0m[1m[3ms[0m[1m[3mt[0m[1m[3mr[0m[1m[3me[0m[1m[3m [0m[1m[3m-[0m[1m[3m [0m[1m[3mf[0m[1m[3mi[0m[1m[3mn[0m[1m[3mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
+1. P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m [0m-[0m [0mf[0mi[0mn[0mg[0m [0m-[0m [0mu[0md[0me[0ml[0ma[0mr[0m
 2. 
 3. [1mI[0m[1mn[0m[1mf[0m[1mo[0m[1mr[0m[1mm[0m[1ma[0m[1mc[0m[1mi[0m[1mo[0m[1mn[0m[1m [0m[1mG[0m[1me[0m[1mn[0m[1me[0m[1mr[0m[1ma[0m[1ml[0m[1m [0m[1md[0m[1me[0m[1ml[0m[1m [0m[1mC[0m[1mu[0m[1mr[0m[1ms[0m[1mo[0m
 4. 
