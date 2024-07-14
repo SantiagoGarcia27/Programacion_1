@@ -50,11 +50,13 @@ begin
     i := 0;
     while (txt <> NIL) do
     begin
-          for j:= 1 to txt^.info.tope do
-          begin            
-                i := i + 1;
-          end;
-          txt := txt^.sig; 
+        j:= 1;
+        while(j <= txt^.info.tope) do
+        begin
+            i := i + 1;
+            j := j + 1;
+        end;
+        txt := txt^.sig; 
     end;
     contarCaracteresEnTexto := i; 
 end;
@@ -125,20 +127,22 @@ procedure buscarCadenaEnTextoDesde ( c : Cadena; txt : Texto; desde : Posicion; 
  var 
     lineaActual :integer;
     pc : PosibleColumna;
+    AliasTexto : Texto;
 begin
    
     lineaActual := 1;
     pc.esColumna := false;
     pp.esPosicion := false;
 
-    while (txt <> NIL) And (pp.esPosicion = false) do 
+    AliasTexto := ubicarLineaEnTexto(txt,desde.linea);
+    while (AliasTexto <> NIL) And (pp.esPosicion = false) do 
     begin
         if lineaActual >= desde.linea then
         begin
             if lineaActual = desde.linea then 
-                buscarCadenaEnLineaDesde (c, txt^.info, desde.columna,pc)
+                buscarCadenaEnLineaDesde (c, AliasTexto^.info, desde.columna,pc)
             else 
-                buscarCadenaEnLineaDesde (c, txt^.info, 1,pc);
+                buscarCadenaEnLineaDesde (c, AliasTexto^.info, 1,pc);
 
 
             if pc.esColumna = true then
@@ -151,10 +155,11 @@ begin
             begin
                 pp.esPosicion := false;
             end;
-        end;
+        end; 
 
-        txt := txt^.sig;
+       
         lineaActual := lineaActual + 1;
+        AliasTexto := AliasTexto^.sig;
     end;
 end;
 

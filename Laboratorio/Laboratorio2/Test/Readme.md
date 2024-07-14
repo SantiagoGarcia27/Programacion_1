@@ -131,6 +131,7 @@ Ejecutamos nuestro programa de la siguiente forma:
     ./principal  < entradas/14.txt  > mios/14.txt
     ./principal  < entradas/20.txt  > mios/20.txt
     ./principal  < entradas/31.txt  > mios/31.txt
+    ./principal  < entradas/32.txt  > mios/32.txt
     ./principal  < entradas/33.txt  > mios/32.txt
     ./principal  < entradas/33.txt  > mios/33.txt
     ./principal  < entradas/34.txt  > mios/34.txt

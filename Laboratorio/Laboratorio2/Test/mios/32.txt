@@ -230,8 +230,8 @@ Ingrese Opción
 --------------------------------
 Ingrese línea: Ingrese columna: Texto a buscar:
 Resultado: 
-Línea:42 Columna:1
-B[0mu[0me[0mn[0ma[0m [0mP[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0mp[0ma[0mr[0ma[0m [0mt[0mo[0md[0mo[0ms[0m
+Línea:26 Columna:1
+q[0mu[0me[0m [0ms[0me[0m [0ma[0mt[0me[0mn[0md[0me[0mr[0ma[0mn[0m [0mt[0mo[0md[0mo[0ms[0m [0ml[0mo[0ms[0m [0md[0mi[0ma[0ms[0m.[0m
 ^
 --------------------------------
 Ingrese Opción
